@@ -22,12 +22,12 @@ function getResults(){
 function calculateProfitLoss(initialP, qty,curr){
     if(curr>initialP){
         var profit = (curr - initialP) * qty ;    
-        var profitPercentage = (profit/initialP)*100;
+        var profitPercentage = ((profit/initialP)*100).toFixed(2);
         showMessage(`Yay, You made profit of ${profit} and the Profit percentage is ${profitPercentage}%`);
     }
     else if(curr< initialP){
         var loss = initialP - curr;
-        var lossPercentage =  (loss/initialP) *100;
+        var lossPercentage =  ((loss/initialP) *100).toFixed(2);
         showMessage(` Oops, You made loss of ${loss} units on stocks, the loss percentage is ${lossPercentage}%`);
     }
     else{
