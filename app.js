@@ -28,7 +28,7 @@ function calculateProfitLoss(initialP, qty,curr){
     else if(curr< initialP){
         var loss = initialP - curr;
         var lossPercentage =  (loss/initialP) *100;
-        showMessage(` Oops, You made loss of ${loss} units on stocks, the loss percentage is ${lossPercentage}`);
+        showMessage(` Oops, You made loss of ${loss} units on stocks, the loss percentage is ${lossPercentage}%`);
     }
     else{
         showMessage("No pain no gain");
