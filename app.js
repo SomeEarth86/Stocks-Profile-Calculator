@@ -17,7 +17,7 @@ function getResults() {
         calculateProfitLoss(initialP, qty, curr);
     }
     else {
-        showMessage("Enter valid input")
+        showMessage("Enter valid input");
     }
 
 }
