@@ -13,8 +13,11 @@ function getResults() {
     var qty = Number(qtyStocks.value);
     var curr = Number(currentPrice.value);
 
-    if (initialP && qty && curr) {
+    if ((initialP > 0) && (qty > 0) && (curr > 0) ) {
         calculateProfitLoss(initialP, qty, curr);
+    }
+    else {
+        showMessage("Enter valid input")
     }
 
 }
